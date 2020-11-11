@@ -24,7 +24,32 @@ The state sleep is the initial state. In the sleep , the robot returns to its ho
 ## Installation and Running Procedure
 Clone this github repository into the ROS workspace
 ```
-git clone https://github.com/NithaElizabeth/Behavioural-Architecture_-EXPRO-1
+git clone https://github.com/NithaElizabeth/Behavioural-Architecture_-EXPRO-1-
+```
+Next the scripts had to made executable.For that navigate to the src folder of this repositiory.
+```
+cd assignment1\src
+```
+```
+chmod +x state_machine.py
+```
+```
+chmod +x verbal_interaction.py
+```
+```
+chmod +x gesture_interaction.py
+```
+```
+chmod +x control.py
+```
+After this. in another terminal run the roscore.
+```
+roscore
+```
+Once the roscore is run,then the launch file must be run.
+```
+cd ..
+roslaunch assignment1 assignment1.launch
 ```
 ## Working Hypothesis 
 ## Systems Features
