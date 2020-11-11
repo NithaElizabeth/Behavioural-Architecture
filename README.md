@@ -1,2 +1,2 @@
-# Behavioural-Architecture_-EXPRO-1-
+## Experimental Robotics Laboratory 
 This contains the assignment 1 of Experimental Robotics Lab.
