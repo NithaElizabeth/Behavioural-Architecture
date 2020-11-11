@@ -17,6 +17,9 @@ This component is responsible for obtaining the gestures from the operator(perso
 This acts as the command manager.It switches between three states i.e. sleep,normal,play. Sleep being the initial state, the robot rset in its home location. At normal state, the robot wanders randomly throughout the envirionment.In the play state , the robot moves to the location og the operator and then follows the operators gestures and move toward the position pointed by the operator.
 #### Control
 This component is responsible for the robot motion and control. After obtaining the location or commands from the previous components, the robot moves to the position respectively.This component also publishes its current location via topic /position.
+## State Diagram
+This section explains how the states are decided.As shows in the state diagram above, there are three states : sleep, normal, paly.
+The state sleep is the initial state. In the sleep , the robot returns to its home position and rests.From the "sleep" state the robot switches to the "normal"behaviour.In the normal behaviour the robot moves randomly at location withing its constrainted envirionment. In the normal behaviour, the robot will be willing to listen to the verbal commands and all the verbal commands will be registered.From the state "normal", it can switch to either "sleep" or "play".In the "play", the robot initially moves to position where the operator (person) is and then follows the operators instruction and moves to the location pointed by the operator.
 ## Package and File List
 ## Installation and Running Procedure
 ## Working Hypothesis 
