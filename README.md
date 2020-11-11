@@ -24,3 +24,5 @@ This component is responsible for the robot motion and control. After obtaining 
 ## Systems Limitation
 ## Possible Improvements
 ## Author
+Author  : Nitha Elizabeth John
+Contact : nithaelizabethjohn@gmail.com
