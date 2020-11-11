@@ -58,6 +58,7 @@ The system provides a weel implemented behavioural architecture.This system is c
 ## Systems Limitation
 The system was not realised is practical scenerio, hence most of the operations are randomised inclding the time to wait. The system is only capable of processing the voice command "play".From "play" the robot automaticaly switches to "normal" state even without being invoked which may not be ideal in real scenerio.The robot movement was not simulated as this project concentrates mostly on the higher level, i.e finite state machine. The system adheres to the predefined working scenerios and hypothesis but it has flaws and would not be fully functional in real scenerio with lot of uncertainities.
 ## Possible Improvements
+The system could be more rondomised so as to work in the worldly scenerio with ot of ambiguities.Rather than fixing the operator's position, it can be made random.Similarly the the envirionment can me remodelled.  Also it could be reprogrammed in such a way that the verbal interaction node can possibly processes several voice commands rather than "play" alone.Finnaly, The simulation could be visualised in a simulator.
 ## Author
 Author  : Nitha Elizabeth John
 Contact : nithaelizabethjohn@gmail.com
