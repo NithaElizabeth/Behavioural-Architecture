@@ -22,6 +22,10 @@ This section explains how the states are decided.As shows in the state diagram a
 The state sleep is the initial state. In the sleep , the robot returns to its home position and rests.From the "sleep" state the robot switches to the "normal"behaviour.In the normal behaviour the robot moves randomly at location withing its constrainted envirionment. In the normal behaviour, the robot will be willing to listen to the verbal commands and all the verbal commands will be registered.From the state "normal", it can switch to either "sleep" or "play".In the "play", the robot initially moves to position where the operator (person) is and then follows the operators instruction and moves to the location pointed by the operator.
 ## Package and File List
 ## Installation and Running Procedure
+Clone this github repository into the ROS workspace
+```
+git clone https://github.com/NithaElizabeth/Behavioural-Architecture_-EXPRO-1
+```
 ## Working Hypothesis 
 ## Systems Features
 ## Systems Limitation
