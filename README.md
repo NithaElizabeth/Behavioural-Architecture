@@ -9,8 +9,8 @@ The picture above is the component diagram of the implemented system.The major c
 * Gesture Interaction
 * State Machine
 * Control
-### Verbal Interaction Component
-
+#### Verbal Interaction Component
+This component is responsible for obtaining the verbal orders from the operator(person).This is used to receive the voice commands of the person and then to process it . Once processed it will be passed on to the state machine to initiate the corresponding behavior.In this project, it is assumed that the operator says a command of type string (eg. "play" ) and it is processed and send to to the state machine.
 ## Package and File List
 ## Installation and Running Procedure
 ## Working Hypothesis 
