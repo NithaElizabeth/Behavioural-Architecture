@@ -28,7 +28,7 @@ git clone https://github.com/NithaElizabeth/Behavioural-Architecture_-EXPRO-1-
 ```
 Next the scripts had to made executable.For that navigate to the src folder of this repositiory.
 ```
-cd assignment1\src
+cd assignment1/src
 ```
 ```
 chmod +x state_machine.py
