@@ -1,0 +1,102 @@
+\hypertarget{namespacestate__machine}{}\doxysection{state\+\_\+machine Namespace Reference}
+\label{namespacestate__machine}\index{state\_machine@{state\_machine}}
+\doxysubsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class \mbox{\hyperlink{classstate__machine_1_1_normal}{Normal}}
+\item 
+class \mbox{\hyperlink{classstate__machine_1_1_play}{Play}}
+\item 
+class \mbox{\hyperlink{classstate__machine_1_1_sleep}{Sleep}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+def \mbox{\hyperlink{namespacestate__machine_afaa99f0eebff6571a958fcc827c6a367}{user\+\_\+action}} ()
+\item 
+def \mbox{\hyperlink{namespacestate__machine_a5c680ce705e6052fa07c6cece21743d0}{main}} ()
+\end{DoxyCompactItemize}
+\doxysubsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{namespacestate__machine_ac0e87defa8551774989d4c4384dd0de7}{x\+\_\+lim}} = rospy.\+get\+\_\+param(\textquotesingle{}x\+\_\+limit\textquotesingle{})
+\item 
+\mbox{\hyperlink{namespacestate__machine_aaf26f71b77d89ff022f95ae701ea8cb8}{y\+\_\+lim}} = rospy.\+get\+\_\+param(\textquotesingle{}y\+\_\+limit\textquotesingle{})
+\item 
+\mbox{\hyperlink{namespacestate__machine_a3669dfeedfa2679681f6eeb2b2d5e872}{person\+\_\+pos\+\_\+x}} = rospy.\+get\+\_\+param(\textquotesingle{}person\+\_\+x\textquotesingle{})
+\item 
+\mbox{\hyperlink{namespacestate__machine_a67ea0731b35c130f8d651d1c4e73b59d}{person\+\_\+pos\+\_\+y}} = rospy.\+get\+\_\+param(\textquotesingle{}person\+\_\+y\textquotesingle{})
+\item 
+\mbox{\hyperlink{namespacestate__machine_a3585261795017412ea4e511dac591e85}{home\+\_\+position\+\_\+x}} = rospy.\+get\+\_\+param(\textquotesingle{}home\+\_\+x\textquotesingle{})
+\item 
+\mbox{\hyperlink{namespacestate__machine_a437516f7ee94720d42d7efc55327b266}{home\+\_\+position\+\_\+y}} = rospy.\+get\+\_\+param(\textquotesingle{}home\+\_\+y\textquotesingle{})
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+\begin{DoxyVerb}This is the state machine that switches between the three states
+
+This node is a satate machine that is implemented in position of command
+manager in the whole architecture.This state machine is implemented in 
+smach.It switches between three nodes sleep, normal and play.\end{DoxyVerb}
+ 
+
+\doxysubsection{Function Documentation}
+\mbox{\Hypertarget{namespacestate__machine_a5c680ce705e6052fa07c6cece21743d0}\label{namespacestate__machine_a5c680ce705e6052fa07c6cece21743d0}} 
+\index{state\_machine@{state\_machine}!main@{main}}
+\index{main@{main}!state\_machine@{state\_machine}}
+\doxysubsubsection{\texorpdfstring{main()}{main()}}
+{\footnotesize\ttfamily def state\+\_\+machine.\+main (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}This class is the main class
+    
+This class defines the relation of each state parameters to corresponding 
+states.From the sleep state , the robot moves to Normal state.From the 
+normal state the robot can move to either Sleep state or PLay state.And 
+from the Play state the robot moves back to normal state.\end{DoxyVerb}
+ \mbox{\Hypertarget{namespacestate__machine_afaa99f0eebff6571a958fcc827c6a367}\label{namespacestate__machine_afaa99f0eebff6571a958fcc827c6a367}} 
+\index{state\_machine@{state\_machine}!user\_action@{user\_action}}
+\index{user\_action@{user\_action}!state\_machine@{state\_machine}}
+\doxysubsubsection{\texorpdfstring{user\_action()}{user\_action()}}
+{\footnotesize\ttfamily def state\+\_\+machine.\+user\+\_\+action (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}This function choses randomly a state from the 3 states:"sleep","normal","play" \end{DoxyVerb}
+ 
+
+\doxysubsection{Variable Documentation}
+\mbox{\Hypertarget{namespacestate__machine_a3585261795017412ea4e511dac591e85}\label{namespacestate__machine_a3585261795017412ea4e511dac591e85}} 
+\index{state\_machine@{state\_machine}!home\_position\_x@{home\_position\_x}}
+\index{home\_position\_x@{home\_position\_x}!state\_machine@{state\_machine}}
+\doxysubsubsection{\texorpdfstring{home\_position\_x}{home\_position\_x}}
+{\footnotesize\ttfamily state\+\_\+machine.\+home\+\_\+position\+\_\+x = rospy.\+get\+\_\+param(\textquotesingle{}home\+\_\+x\textquotesingle{})}
+
+\mbox{\Hypertarget{namespacestate__machine_a437516f7ee94720d42d7efc55327b266}\label{namespacestate__machine_a437516f7ee94720d42d7efc55327b266}} 
+\index{state\_machine@{state\_machine}!home\_position\_y@{home\_position\_y}}
+\index{home\_position\_y@{home\_position\_y}!state\_machine@{state\_machine}}
+\doxysubsubsection{\texorpdfstring{home\_position\_y}{home\_position\_y}}
+{\footnotesize\ttfamily state\+\_\+machine.\+home\+\_\+position\+\_\+y = rospy.\+get\+\_\+param(\textquotesingle{}home\+\_\+y\textquotesingle{})}
+
+\mbox{\Hypertarget{namespacestate__machine_a3669dfeedfa2679681f6eeb2b2d5e872}\label{namespacestate__machine_a3669dfeedfa2679681f6eeb2b2d5e872}} 
+\index{state\_machine@{state\_machine}!person\_pos\_x@{person\_pos\_x}}
+\index{person\_pos\_x@{person\_pos\_x}!state\_machine@{state\_machine}}
+\doxysubsubsection{\texorpdfstring{person\_pos\_x}{person\_pos\_x}}
+{\footnotesize\ttfamily state\+\_\+machine.\+person\+\_\+pos\+\_\+x = rospy.\+get\+\_\+param(\textquotesingle{}person\+\_\+x\textquotesingle{})}
+
+\mbox{\Hypertarget{namespacestate__machine_a67ea0731b35c130f8d651d1c4e73b59d}\label{namespacestate__machine_a67ea0731b35c130f8d651d1c4e73b59d}} 
+\index{state\_machine@{state\_machine}!person\_pos\_y@{person\_pos\_y}}
+\index{person\_pos\_y@{person\_pos\_y}!state\_machine@{state\_machine}}
+\doxysubsubsection{\texorpdfstring{person\_pos\_y}{person\_pos\_y}}
+{\footnotesize\ttfamily state\+\_\+machine.\+person\+\_\+pos\+\_\+y = rospy.\+get\+\_\+param(\textquotesingle{}person\+\_\+y\textquotesingle{})}
+
+\mbox{\Hypertarget{namespacestate__machine_ac0e87defa8551774989d4c4384dd0de7}\label{namespacestate__machine_ac0e87defa8551774989d4c4384dd0de7}} 
+\index{state\_machine@{state\_machine}!x\_lim@{x\_lim}}
+\index{x\_lim@{x\_lim}!state\_machine@{state\_machine}}
+\doxysubsubsection{\texorpdfstring{x\_lim}{x\_lim}}
+{\footnotesize\ttfamily state\+\_\+machine.\+x\+\_\+lim = rospy.\+get\+\_\+param(\textquotesingle{}x\+\_\+limit\textquotesingle{})}
+
+\mbox{\Hypertarget{namespacestate__machine_aaf26f71b77d89ff022f95ae701ea8cb8}\label{namespacestate__machine_aaf26f71b77d89ff022f95ae701ea8cb8}} 
+\index{state\_machine@{state\_machine}!y\_lim@{y\_lim}}
+\index{y\_lim@{y\_lim}!state\_machine@{state\_machine}}
+\doxysubsubsection{\texorpdfstring{y\_lim}{y\_lim}}
+{\footnotesize\ttfamily state\+\_\+machine.\+y\+\_\+lim = rospy.\+get\+\_\+param(\textquotesingle{}y\+\_\+limit\textquotesingle{})}
+

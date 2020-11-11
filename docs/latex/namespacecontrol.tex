@@ -1,0 +1,87 @@
+\hypertarget{namespacecontrol}{}\doxysection{control Namespace Reference}
+\label{namespacecontrol}\index{control@{control}}
+\doxysubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+def \mbox{\hyperlink{namespacecontrol_a5e2022234b4f7b85fa359a2645bf8b63}{constraints}} (x, y)
+\item 
+def \mbox{\hyperlink{namespacecontrol_a86db431e2ac0ba84da0e94d8f412c61f}{sub\+\_\+callback}} (loc)
+\item 
+def \mbox{\hyperlink{namespacecontrol_a9e82864ed4f4220354a12763d00f86e0}{sub\+\_\+callback\+\_\+gesture}} (loc\+\_\+gest)
+\item 
+def \mbox{\hyperlink{namespacecontrol_ae30abd5434d0371b0ee31f5a3f62e1f0}{robot\+\_\+controller}} ()
+\end{DoxyCompactItemize}
+\doxysubsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{namespacecontrol_a46ca5a83df43ae867e8c7ae6f1fb8109}{x\+\_\+limit}} = rospy.\+get\+\_\+param(\char`\"{}x\+\_\+limit\char`\"{})
+\item 
+\mbox{\hyperlink{namespacecontrol_a3dfb999e7ff586f8c76bd4f4a8f683c3}{y\+\_\+limit}} = rospy.\+get\+\_\+param(\char`\"{}y\+\_\+limit\char`\"{})
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+\begin{DoxyVerb}This is the Robot Controller Node
+
+This is node receives the the order to where to move the robot from the 
+state machine and accordingly moves the robot to the position mentioned 
+by the state machine node.\end{DoxyVerb}
+ 
+
+\doxysubsection{Function Documentation}
+\mbox{\Hypertarget{namespacecontrol_a5e2022234b4f7b85fa359a2645bf8b63}\label{namespacecontrol_a5e2022234b4f7b85fa359a2645bf8b63}} 
+\index{control@{control}!constraints@{constraints}}
+\index{constraints@{constraints}!control@{control}}
+\doxysubsubsection{\texorpdfstring{constraints()}{constraints()}}
+{\footnotesize\ttfamily def control.\+constraints (\begin{DoxyParamCaption}\item[{}]{x,  }\item[{}]{y }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}This method checks if the provided position is reachable
+
+It checks whether the given coordinates lies in the world described for 
+the experiment.If the given position is not reachable , it provides an 
+error message and will not move to that location.\end{DoxyVerb}
+ \mbox{\Hypertarget{namespacecontrol_ae30abd5434d0371b0ee31f5a3f62e1f0}\label{namespacecontrol_ae30abd5434d0371b0ee31f5a3f62e1f0}} 
+\index{control@{control}!robot\_controller@{robot\_controller}}
+\index{robot\_controller@{robot\_controller}!control@{control}}
+\doxysubsubsection{\texorpdfstring{robot\_controller()}{robot\_controller()}}
+{\footnotesize\ttfamily def control.\+robot\+\_\+controller (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}This method is initialises the node
+
+Here this function initialises the node.It also subscribes to the topic 
+/robot_control and /pointed_location.\end{DoxyVerb}
+ \mbox{\Hypertarget{namespacecontrol_a86db431e2ac0ba84da0e94d8f412c61f}\label{namespacecontrol_a86db431e2ac0ba84da0e94d8f412c61f}} 
+\index{control@{control}!sub\_callback@{sub\_callback}}
+\index{sub\_callback@{sub\_callback}!control@{control}}
+\doxysubsubsection{\texorpdfstring{sub\_callback()}{sub\_callback()}}
+{\footnotesize\ttfamily def control.\+sub\+\_\+callback (\begin{DoxyParamCaption}\item[{}]{loc }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}This method is a callback function
+
+It checks with the costraints if the points are valid and if its 
+valid then moves the robot to that location as given\end{DoxyVerb}
+ \mbox{\Hypertarget{namespacecontrol_a9e82864ed4f4220354a12763d00f86e0}\label{namespacecontrol_a9e82864ed4f4220354a12763d00f86e0}} 
+\index{control@{control}!sub\_callback\_gesture@{sub\_callback\_gesture}}
+\index{sub\_callback\_gesture@{sub\_callback\_gesture}!control@{control}}
+\doxysubsubsection{\texorpdfstring{sub\_callback\_gesture()}{sub\_callback\_gesture()}}
+{\footnotesize\ttfamily def control.\+sub\+\_\+callback\+\_\+gesture (\begin{DoxyParamCaption}\item[{}]{loc\+\_\+gest }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}This method is callback function to the subscribed gesture topic
+
+It checks with the costraints if the points are valid and if its 
+valid then moves the robot to that location as pointed by the operator\end{DoxyVerb}
+ 
+
+\doxysubsection{Variable Documentation}
+\mbox{\Hypertarget{namespacecontrol_a46ca5a83df43ae867e8c7ae6f1fb8109}\label{namespacecontrol_a46ca5a83df43ae867e8c7ae6f1fb8109}} 
+\index{control@{control}!x\_limit@{x\_limit}}
+\index{x\_limit@{x\_limit}!control@{control}}
+\doxysubsubsection{\texorpdfstring{x\_limit}{x\_limit}}
+{\footnotesize\ttfamily control.\+x\+\_\+limit = rospy.\+get\+\_\+param(\char`\"{}x\+\_\+limit\char`\"{})}
+
+\mbox{\Hypertarget{namespacecontrol_a3dfb999e7ff586f8c76bd4f4a8f683c3}\label{namespacecontrol_a3dfb999e7ff586f8c76bd4f4a8f683c3}} 
+\index{control@{control}!y\_limit@{y\_limit}}
+\index{y\_limit@{y\_limit}!control@{control}}
+\doxysubsubsection{\texorpdfstring{y\_limit}{y\_limit}}
+{\footnotesize\ttfamily control.\+y\+\_\+limit = rospy.\+get\+\_\+param(\char`\"{}y\+\_\+limit\char`\"{})}
+
