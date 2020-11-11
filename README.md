@@ -60,6 +60,6 @@ The system was not realised is practical scenerio, hence most of the operations 
 ## Possible Improvements
 The system could be more rondomised so as to work in the worldly scenerio with ot of ambiguities.Rather than fixing the operator's position, it can be made random.Similarly the the envirionment can me remodelled.  Also it could be reprogrammed in such a way that the verbal interaction node can possibly processes several voice commands rather than "play" alone.Finnaly, The simulation could be visualised in a simulator.
 ## Author
-The system was developed by Nitha Elizabeth John under the guidance of Prof.Luca Buoncompagni and Prof.Carmine Recchiuto
+The system was developed by Nitha Elizabeth John under the guidance of Prof.Luca Buoncompagni and Prof.Carmine Recchiuto\
 Author  : Nitha Elizabeth John
 Contact : nithaelizabethjohn@gmail.com
