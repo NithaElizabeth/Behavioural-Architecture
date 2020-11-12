@@ -14,18 +14,20 @@ This component is responsible for obtaining the verbal orders from the operator(
 #### Gesture Interaction
 This component is responsible for obtaining the gestures from the operator(person). This components will recieve the cordinates of the location pointed by the operator and it is published to the state machine so that if the robot is in state "play" it should move the location pointed by the operator.
 #### State Machine
-This acts as the command manager.
-It switches between three states i.e. sleep,normal,play. Sleep being the initial state, the robot rset in its home location. At normal state, the robot wanders randomly throughout the envirionment.In the play state , the robot moves to the location og the operator and then follows the operators gestures and move toward the position pointed by the operator.
+This acts as the command manager.It switches between three states i.e. sleep,normal,play. Sleep being the initial state, the robot rset in its home location. At normal state, the robot wanders randomly throughout the envirionment.In the play state , the robot moves to the location og the operator and then follows the operators gestures and move toward the position pointed by the operator.
 #### Control
 This component is responsible for the robot motion and control. After obtaining the location or commands from the previous components, the robot moves to the position respectively.This component also publishes its current location via topic /position.
 ## State Diagram
-This section explains how the states are decided.
+This section explains how the states are decided.As shows in the state diagram below, there are three states : sleep, normal, paly.
 ![Untitled Document (1)](https://user-images.githubusercontent.com/47361086/98930126-a0e6cd80-24f5-11eb-8624-acb703c2cd10.png)
 
-As shows in the state diagram above, there are three states : sleep, normal, paly.
 The state sleep is the initial state. In the sleep , the robot returns to its home position and rests.From the "sleep" state the robot switches to the "normal"behaviour.In the normal behaviour the robot moves randomly at location withing its constrainted envirionment. In the normal behaviour, the robot will be willing to listen to the verbal commands and all the verbal commands will be registered.From the state "normal", it can switch to either "sleep" or "play".In the "play", the robot initially moves to position where the operator (person) is and then follows the operators instruction and moves to the location pointed by the operator.
 ## Package and File List
-![tree](https://user-images.githubusercontent.com/47361086/98932535-e35dd980-24f8-11eb-9aa2-a4db639d4a1a.PNG)
+The file tree shows the various packages in this project.
+
+![tree1](https://user-images.githubusercontent.com/47361086/98941699-60438000-2506-11eb-945e-3f5ad7b48c23.PNG)
+
+The docs folder contains the documentations obtained from doxgen.The intex.html contains the html documentation of all the scripts used in this project.The launch folder has the launch file to run the project.The scripts are all contained inside the src folder.
 ## Installation and Running Procedure
 Clone this github repository into the ROS workspace
 ```
@@ -33,7 +35,7 @@ git clone https://github.com/NithaElizabeth/Behavioural-Architecture_-EXPRO-1-
 ```
 Next the scripts had to made executable.For that navigate to the src folder of this repositiory.
 ```
-cd assignment1/src
+cd Behavioural-Architecture_-EXPRO-1--master/src
 ```
 ```
 chmod +x state_machine.py
