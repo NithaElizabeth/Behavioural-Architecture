@@ -2,7 +2,7 @@
 #### Behavioural Architecture
 ## Intoduction
 This repository contains the Assignment 1 of Experimental Robotics Lab.The aim of this assignment is to implement a behavioural architecure for a robot that moves in a discrete 2D envirionment.The architecture involves perception components, a finite state machine as the command manager and a controller component.\
-The project was developed in ROS-kinetic and Python and state machine is implemented on Smach. 
+The project was developed on ROS-kinetic and Python and state machine is implemented on Smach. 
 ## Software Architecture
 ![expro_arch2](https://user-images.githubusercontent.com/47361086/98937966-9ed63c00-2500-11eb-920e-5707efc8079d.PNG)
 The picture above is the component diagram of the implemented system.The major components of the system are :
@@ -11,7 +11,7 @@ The picture above is the component diagram of the implemented system.The major c
 * State Machine
 * Control
 #### Verbal Interaction Component
-This component is responsible for obtaining the verbal orders from the operator(person).This is used to receive the voice commands of the person and then to process it . Once processed it will be passed on to the state machine to initiate the corresponding behavior.In this project, it is assumed that the operator says a command of type string (eg. "play" ) and it is processed and send to to the state machine.
+This component is responsible for obtaining the verbal orders from the operator(person).This is used to receive the voice commands of the person and then to process it . Once processed, it will be passed on to the state machine to initiate the corresponding behavior. In this project, it is assumed that the operator says a command of type string (eg. "play" ) and it is processed and send to to the state machine.
 #### Gesture Interaction
 This component is responsible for obtaining the gestures from the operator(person). This components will recieve the cordinates of the location pointed by the operator and it is published to the state machine so that if the robot is in state "play" it should move the location pointed by the operator.
 #### State Machine
