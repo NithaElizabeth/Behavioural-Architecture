@@ -21,6 +21,7 @@ This component is responsible for the robot motion and control. After obtaining 
 This section explains how the states are decided.As shows in the state diagram above, there are three states : sleep, normal, paly.
 The state sleep is the initial state. In the sleep , the robot returns to its home position and rests.From the "sleep" state the robot switches to the "normal"behaviour.In the normal behaviour the robot moves randomly at location withing its constrainted envirionment. In the normal behaviour, the robot will be willing to listen to the verbal commands and all the verbal commands will be registered.From the state "normal", it can switch to either "sleep" or "play".In the "play", the robot initially moves to position where the operator (person) is and then follows the operators instruction and moves to the location pointed by the operator.
 ## Package and File List
+![tree](https://user-images.githubusercontent.com/47361086/98932535-e35dd980-24f8-11eb-9aa2-a4db639d4a1a.PNG)
 ## Installation and Running Procedure
 Clone this github repository into the ROS workspace
 ```
