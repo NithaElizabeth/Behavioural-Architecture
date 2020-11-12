@@ -23,7 +23,9 @@ This section explains how the states are decided.As shows in the state diagram b
 
 The state sleep is the initial state. In the sleep , the robot returns to its home position and rests.From the "sleep" state the robot switches to the "normal"behaviour.In the normal behaviour the robot moves randomly at location withing its constrainted envirionment. In the normal behaviour, the robot will be willing to listen to the verbal commands and all the verbal commands will be registered.From the state "normal", it can switch to either "sleep" or "play".In the "play", the robot initially moves to position where the operator (person) is and then follows the operators instruction and moves to the location pointed by the operator.
 ## Package and File List
+The file tree shows the various packages in this project.
 ![tree](https://user-images.githubusercontent.com/47361086/98932535-e35dd980-24f8-11eb-9aa2-a4db639d4a1a.PNG)
+The docs folder contains the documentations obtained from doxgen.The intex.html contains the html documentation of all the scripts used in this project.The launch folder has the launch file to run the project.The scripts are all contained inside the src folder.
 ## Installation and Running Procedure
 Clone this github repository into the ROS workspace
 ```
