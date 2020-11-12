@@ -56,7 +56,7 @@ roscore
 Once the roscore is run,then the launch file must be run.
 ```
 cd ..
-roslaunch Behavioural-Architecture_-EXPRO-1--master assignment1.launch
+roslaunch assignment1 assignment1.launch
 ```
 ## Working Hypothesis 
 Throughout this project, it was assumed that the robot moves in discrete 2D envirionment.It implies that the position of robot at any instant will be a point with x and y coordinates only. The finite state machine was built under the hypothesis that the transition between the state will be strictly like that shown in the state diagram figure given above. It was also assumed that the position of the person will be constant for an iteration of the program. The verbal interaction node assumes that the operator commands will be of type string. It is also assumed that throughout the program that the robot will process only one operation at a time and all other operation that that point will be queued and only processed after the execution of the current task (if still in the same behaviour).
