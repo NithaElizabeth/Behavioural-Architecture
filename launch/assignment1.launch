@@ -2,12 +2,12 @@
     	<!-- Parameters defining the discretized 2D envirionments width and height -->
     	<param name="x_limit"     value="30" />
     	<param name="y_limit"     value="30" />
+	<param name="position_x"  type="int"  value="0" />
+	<param name="position_y"  type="int"  value="0" />
 
 	<!-- Parameters defining the current state -->
 	<param name="current"  type="string"  value="sleep" />
 
-	<param name="position_x"  type="int"  value="0" />
-	<param name="position_y"  type="int"  value="0" />
 
 	<!-- Parameters defining the home position in the 2D envirionment -->
 	<param name="home_x"  type="int"  value="1" />
