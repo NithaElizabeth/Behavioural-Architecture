@@ -1,7 +1,8 @@
 # Experimental Robotics Laboratory - Assignment 1
 #### Behavioural Architecture
 ## Intoduction
-This contains the Assignment 1 of Experimental Robotics Lab.The aim of this assignment is to implement a behavioural architecure for a robot that moves in a discrete 2D envirionment.The architecture involves perception components, a finite state machine as the command manager and a controller component.
+This repository contains the Assignment 1 of Experimental Robotics Lab.The aim of this assignment is to implement a behavioural architecure for a robot that moves in a discrete 2D envirionment.The architecture involves perception components, a finite state machine as the command manager and a controller component.\
+The project was developed in ROS-kinetic and Python and state machine is implemented on Smach. 
 ## Software Architecture
 ![expro_arch2](https://user-images.githubusercontent.com/47361086/98937966-9ed63c00-2500-11eb-920e-5707efc8079d.PNG)
 The picture above is the component diagram of the implemented system.The major components of the system are :
