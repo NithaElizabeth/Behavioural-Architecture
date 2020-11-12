@@ -1,16 +1,27 @@
 <launch> 
-    	<!-- Parameters defining the discretized world width and height -->
+    	<!-- Parameters defining the discretized 2D envirionments width and height -->
     	<param name="x_limit"     value="30" />
     	<param name="y_limit"     value="30" />
+
+	<!-- Parameters defining the current state -->
 	<param name="current"  type="string"  value="sleep" />
+
 	<param name="position_x"  type="int"  value="0" />
 	<param name="position_y"  type="int"  value="0" />
+
+	<!-- Parameters defining the home position in the 2D envirionment -->
 	<param name="home_x"  type="int"  value="1" />
 	<param name="home_y"  type="int"  value="1" />
+
+	<!-- Parameters defining the operators position in the 2D envirionment -->
 	<param name="person_x"  type="int"  value="5" />
 	<param name="person_y"  type="int"  value="5" />
+
+	<!-- Initial value for  the topic pointed_location  -->
 	<param name="pointed_x"  type="int"  value="0" />
 	<param name="pointed_y"  type="int"  value="0" />
+
+	<!-- Definition of Nodes -->
 	<node name="state_machine" pkg="assignment1" type="state_machine.py" output="screen"/> 
 	<node name="verbal_interaction" pkg="assignment1" type="verbal_interaction.py" output="screen"/> 
 	<node name="gesture_interaction" pkg="assignment1" type="gesture_interaction.py" output="screen"/> 
